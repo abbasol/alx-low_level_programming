@@ -1,7 +1,7 @@
 #include <unistd.h>
 /**
  * main - this prints exactly the input on it
- *  Return: Alway 1.
+ * Return: Always 1.
  */
 
 int main(void)
