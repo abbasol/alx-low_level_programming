@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - this sdesribes the man function of the code
- * Return: 0
+ * Return: 0.
  */
 int main(void)
 {
