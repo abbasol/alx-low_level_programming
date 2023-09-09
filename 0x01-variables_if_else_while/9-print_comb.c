@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 /**
@@ -10,20 +11,14 @@
 
 int main(void)
 {
-	int digit = 0;
+        int n;
 
-	while (digit <= 9)
-	{
-		putchar(digit + 48);
-
-		if (digit != 9)
-		{
-			putchar('.');
-			putchar(' ');
-		}
-		
-		digit++;
+        for (n = 48; n <= 57; n++)
+        {
+                putchar(n);
+		putchar(',');
+		putchar(' ');
 	}
-	putchar('\n');
-	return (0);
+        putchar('\n');
+        return (0);
 }
