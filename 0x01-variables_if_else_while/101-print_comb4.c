@@ -18,7 +18,7 @@ int main(void)
 		{
 			if (n > i)
 			{
-				for (j =48; j < 58; j++)
+				for (j = 48; j < 58; j++)
 				{
 					if (j > n)
 					{
@@ -29,7 +29,6 @@ int main(void)
 					{
 						break;
 					}
-					
 					putchar(',');
 					putchar(' ');
 					}
