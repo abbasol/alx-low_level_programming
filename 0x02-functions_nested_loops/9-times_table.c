@@ -8,31 +8,39 @@
  * 0, 1, 2, 3, ..
  *
  */
-void times_table(void)
+
+void times_table(int n)
 {
-	int num, mult, prod;
+    int num, mult, prod;
 
-	for (num = 0; num <= 9; num++)
-	{
-		_putchar(48);
-		for (num = 0; num <= 9; num++)
-		{
-			_putchar(',');
-			_putchar(' ');
+    if (n >= 0 && n <= 15)
+    {
+        for (num = 0; num <= n; num++)
+        {
+            for (mult = 0; mult <= n; mult++)
+            {
+                prod = num * mult;
+                if (mult == 0)
+                    _putchar('0');
+                else
+                    _putchar(' ');
 
-			prod = num * mult;
+                if (prod >= 10)
+                {
+                    _putchar((prod / 10) + '0');
+                    _putchar((prod % 10) + '0');
+                }
+                else
+                {
+                    _putchar(' ');
+                    _putchar(prod + '0');
+                }
 
-			/*
-			 * put space if product is a single number
-			 * place the first digit if its two numbers
-			 */
-			if (prod <=9)
-				_putchar(' ');
-			else
-				_putchar((prod / 10) + 48); /*get the first digit*/
-			
-			_putchar((prod % 10) + 48); /*get the second digit*/
-		}
-		_putchar('\n');
-	}
+                if (mult < n)
+                    _putchar(',');
+                else
+                    _putchar('\n');
+            }
+        }
+    }
 }
