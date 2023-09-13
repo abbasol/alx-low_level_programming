@@ -21,7 +21,8 @@ int main(void)
 		
 		if (sum > 4000000)
 			break;
-		if ((sum % 2) ==)
+
+		if ((sum % 2) == 0)
 			total_sum += sum;
 
 		fib1 = fib2;
