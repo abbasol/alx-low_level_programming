@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
  * Return: void
  */
@@ -11,7 +11,7 @@ int main(void)
 int p = 100;
 int i;
 
-i = 1;
+i - 1;
 while (i <= p)
 {
 if (i % 3 == 0 && i % 5 == 0)
@@ -40,4 +40,8 @@ printf("%i ", i);
 
 i++;
 
+
+}
+printf("\n");
+return (0);
 }
