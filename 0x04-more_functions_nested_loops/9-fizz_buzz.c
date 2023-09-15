@@ -1,35 +1,43 @@
 #include "main.h"
-
 /**
- * main - print numbers 1 - 100 followed by a new line
- *       numbers that are multiples of 3 print Fizz
- *       numbers that are multiples of 5 print Buzz
- *       numbers that are multiples of 3 and 5 print FizzBuzz
- *       each number and word to be separated by space
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 int main(void)
 {
-	int num;
 
-	for (num = 1; num <= 100; num++)
-	{
-		if (num % 3 == 0 && !(num % 5 == 0))
-			printf("Fizz");
-		else if (num % 5 == && !(num % 3 == 0))
-			printf ("Buzz");
-		else if (num % 3 == 0 && num % 5 == 0)
-			printf("FizzBuzz");
-		else
-			printf("%d", num);
+int p = 100;
+int i;
 
-		if (num != 100)
-			printf(" ");
-		else
-			printf("\n");
-	}
+i = 1;
+while (i <= p)
+{
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz ");
+}
 
-	return (0);
+else if (i % 3 == 0)
+{
+printf("Fizz ");
+}
+
+else if (i % 5 == 0)
+if (i < p)
+printf("Buzz ");
+
+else
+{
+printf("Buzz");
+}
+
+else
+{
+printf("%i ", i);
+}
+
+i++;
+
 }
