@@ -4,9 +4,9 @@
  *
  * Return: returns nothing
  */
-int print_most_numbers(void)
+void print_most_numbers(void)
 {
-int numer;
+int number;
 for (number = 48; number < 58; number++)
 {
 if ((number == 50) || (number == 52))
