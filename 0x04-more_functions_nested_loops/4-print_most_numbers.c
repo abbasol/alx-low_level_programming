@@ -1,21 +1,19 @@
 #include "main.h"
-
 /**
- * print_most_numbers - print 0 - 9 apart
- *                 from 2 and 4 and you can
- *                 only use _putchar twice
- * Return: Always 0 (Success)
+ * print_most_numbers - prints numbers except 2 and 4
+ *
+ * Return: returns nothing
  */
-
 int print_most_numbers(void)
 {
-	int num;
-
-	for (num = 0; num <= 9; num++)
-	{
-		if (num == 2 || num == 4)
-			continue;
-		_putchar(num + 48);
-	}
-	_putchar('\n');
+int numer;
+for (number = 48; number < 58; number++)
+{
+if ((number == 50) || (number == 52))
+{
+continue;
+}
+_putchar(number);
+}
+_putchar(10);
 }
