@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "time.h"
 
 /**
@@ -26,7 +28,7 @@ int main(void)
 			sum += n;
 			putchar(n + '0');
 			break;
-		}
+	i	}
 	}
 	
 	return (0);
