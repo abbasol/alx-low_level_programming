@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_tev - imprime en reversa
+ * print_rev - imprime en reversa
  * @s: string
  * return: 0
  */
