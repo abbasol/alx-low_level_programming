@@ -27,4 +27,4 @@ char *_strdup(char *str)
 	        strout[j] = str[j];
 
 	return (strout);
-}
+	}
